@@ -11,6 +11,9 @@ pipeline {
       steps {
         echo 'packer build and deploy ami to aws'
         sh 'ls'
+        sh '''cd packer/build-awslinux2
+
+ls'''
       }
     }
 
