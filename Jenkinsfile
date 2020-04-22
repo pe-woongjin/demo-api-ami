@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'packer build and deploy ami to aws'
-        sh '''cd demo-api-ami/packer/build-awslinux2
+        sh '''cd packer/build-awslinux2
 
 packer build demo-api-prod-ami.json'''
       }
