@@ -14,7 +14,7 @@ pipeline {
         sh '''cd packer/build-awslinux2
 
 ls'''
-        sh 'packer --version'
+        sh '/opt/packer/packer build demo-api-prod-ami.json'
       }
     }
 
