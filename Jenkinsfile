@@ -14,6 +14,7 @@ pipeline {
         sh '''cd packer/build-awslinux2
 
 ls'''
+        sh 'packer --version'
       }
     }
 
