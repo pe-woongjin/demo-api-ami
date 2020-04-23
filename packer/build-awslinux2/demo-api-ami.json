@@ -26,7 +26,6 @@
       "type": "shell",
       "inline": [
         "sudo yum update -y",
-        "sudo amazon-linux-extras install epel -y",
         "sudo amazon-linux-extras install ansible2 -y",
         "sudo yum install git -y"
       ]
@@ -38,7 +37,7 @@
         "cd /tmp/ami",
         "git fetch origin",
         "git checkout master",
-        "sudo ansible-playbook -i 'localhost,' -c local /tmp/ami/packer/demo-api-prod-playbook.yml"
+        "sudo ansible-playbook -i 'localhost,' -c local /tmp/ami/packer/demo-api-playbook.yml"
       ]
     }
   ]
