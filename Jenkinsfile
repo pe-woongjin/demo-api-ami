@@ -12,7 +12,7 @@ pipeline {
         echo 'packer build and deploy ami to aws'
         sh 'ls'
         dir(path: 'packer/build-awslinux2') {
-          sh '/opt/packer/packer build ./demo-api-prod-ami.json'
+          sh '/opt/packer/packer build ./demo-api-ami.json'
         }
 
       }
