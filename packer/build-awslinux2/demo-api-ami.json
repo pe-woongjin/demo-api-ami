@@ -1,6 +1,6 @@
 {
   "variables": {
-    "aws_ami_name": "demo-api-prod-ami-{{ isotime \"06-01-02_1504\" }}",
+    "aws_ami_name": "demo-api-ami-{{ isotime \"06-01-02_1504\" }}",
     "aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
     "aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
     "aws_region": "ap-northeast-2",
