@@ -21,8 +21,9 @@ pipeline {
     stage('Post-Process') {
       steps {
         echo 'Discovery ami images'
-        sh aws ec2 describe-images --owners self --filters "Name=name,Values=demo-api-ami*" > discovery.log
-        sh echo discovery.log
+        sh '''
+        aws ec2 describe-images --owners self --filters "Name=name,Values=demo-api-ami*" > discovery.log
+        echo discovery.log'''
       }
     }
 
