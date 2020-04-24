@@ -22,7 +22,7 @@ pipeline {
       steps {
         echo 'Discovery ami images'
         sh '''
-        aws ec2 describe-images --owners self --filters "Name=name,Values=demo-api-ami*" > discovery.log
+        aws --region ap-northeast-2 ec2 describe-images --owners self --filters "Name=name,Values=demo-api-ami*" > discovery.log
         echo discovery.log'''
       }
     }
