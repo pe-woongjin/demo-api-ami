@@ -23,6 +23,11 @@
   }],
   "provisioners": [
     {
+      "type": "file",
+      "source": "../modules/health-api.jar",
+      "destination": "/home/ec2-user/"
+    },
+    {
       "type": "shell",
       "inline": [
         "sudo yum update -y",
